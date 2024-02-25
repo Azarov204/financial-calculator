@@ -8,7 +8,7 @@ function CompoundInterest() {
   const [ additions, setAdditions ] = useState(0);
   const [ interest, setInterest ] = useState(7.00);
   const [ interestCompound, setInterestCompound ] = useState(COMPOUND_TIME_OPTIONS[0]);
-  const [ timeHorzion, setTimeHorzion ] = useState(RESULT_TIME_OPTIONS[0]);
+  const [ timeHorzion, setTimeHorzion ] = useState(RESULT_TIME_OPTIONS[1]);
   const [ investmentLengthYears, setInvestmentLengthYears ] = useState(30);
 
   return (

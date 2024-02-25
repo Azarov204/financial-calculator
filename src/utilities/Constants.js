@@ -10,3 +10,15 @@ export const URL_COMPOUND_INTEREST = "/calculators/compound-interest";
 export const INVESTMENT_TIME_OPTIONS = ["Weekly", "Bi-Weekly", "Monthly", "Quarterly", "Yearly"];
 export const COMPOUND_TIME_OPTIONS = ["Monthly", "Quarterly", "Semi-Annually", "Yearly"];
 export const RESULT_TIME_OPTIONS = ["Monthly", "Yearly"];
+
+
+export function paymentsPerYear(selection) {
+  if (selection.localeCompare("weekly")) {
+    return 52;
+  } else if (selection.localeCompare("bi-weekly")) {
+    return 26;
+  } else if (selection.localeCompare("monthly")) {
+    return 12;
+  }
+  return undefined;
+}
