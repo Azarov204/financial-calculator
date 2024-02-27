@@ -25,12 +25,3 @@ export function calculateMortgage(principle, monthlyPayment, percent) {
   
   return array;
 }
-
-export function compoundInterestCalculator(initInvestment, additions, 
-additionsFreq, interest, interestCompoundFreq, years) {
-
-
-
-
-
-}
